@@ -8,7 +8,7 @@ async function getBuscaLivrosDaAPI() {
     const res = await fetch(endpointAPI)
     livros = await res.json()
     let livrosComDesconto = aplicarDesconto(livros)
-    exibirOsLivrosNaTela(livros)
+    exibirOsLivrosNaTela(livrosComDesconto)
 
 }
 // praticando array com forEach
