@@ -4,7 +4,7 @@ function exibirOsLivrosNaTela(listaDeLivros) {
   elementoParaInserirLivros.innerHTML = ''
     listaDeLivros.forEach(livro => {
         elementoParaInserirLivros.innerHTML += `
-     <div class="livro">
+      <div class="livro">
       <img class="livro__imagens" src="${livro.imagem}" alt="${livro.alt}" />
       <h2 class="livro__titulo">
         ${livro.titulo}
